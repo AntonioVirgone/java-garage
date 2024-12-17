@@ -1,4 +1,4 @@
-package com.avirgone.garage.inbound.api.find;
+package com.avirgone.garage.inbound.api;
 
 public @interface Delegate {
 }
