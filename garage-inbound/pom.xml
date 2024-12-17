@@ -13,11 +13,16 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.avirgone</groupId>
+            <groupId>${project.groupId}</groupId>
             <artifactId>garage-view-model</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>garage-domain</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

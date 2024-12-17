@@ -17,5 +17,12 @@
             <artifactId>garage-inbound</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
+
+        <!-- Hot swap -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+        </dependency>
     </dependencies>
 </project>

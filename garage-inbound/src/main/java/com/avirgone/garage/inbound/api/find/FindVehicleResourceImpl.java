@@ -18,11 +18,11 @@ import java.util.concurrent.CompletionStage;
 @Tag(name = "Balance Service", description = "Balance Service")
 @RestController
 @RequestMapping("/api/v1/garage")
-public class FindCarResourceImpl implements FindCarResource {
-    private final FindCarResource delegate;
+public class FindVehicleResourceImpl implements FindVehicleResource {
+    private final FindVehicleResource delegate;
 
     @Autowired
-    public FindCarResourceImpl(FindCarResource delegate) {
+    public FindVehicleResourceImpl(FindVehicleResource delegate) {
         this.delegate = delegate;
     }
 
@@ -37,7 +37,6 @@ public class FindCarResourceImpl implements FindCarResource {
             @ApiResponse(responseCode = "400", description = "Invalid id supplied", content = @Content),
             @ApiResponse(responseCode = "404", description = "Account not found", content = @Content)
     })
-
     public CompletionStage<Set<VehicleViewModel>> find(@PathVariable Long customerCode) {
         return delegate.find(customerCode);
     }
