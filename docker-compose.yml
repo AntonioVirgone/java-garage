@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15   # Usa l'ultima versione stabile
+    container_name: postgres-db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: garage   # Cambia con il tuo username
+      POSTGRES_PASSWORD: test_garage   # Cambia con la tua password
+      POSTGRES_DB: garage   # Nome del database
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:

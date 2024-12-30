@@ -26,6 +26,7 @@
         <module>garage-inbound</module>
         <module>garage-view-model</module>
         <module>garage-domain</module>
+        <module>garage-outbound</module>
     </modules>
 
     <dependencies>
